@@ -8,6 +8,10 @@ public class Programa {
 		
 		Long soma = 1L + 5L;
 		System.out.println(soma);
+		
+		Long incremento = ++soma;
+		
+		System.out.println(incremento);
 
 	}
 
