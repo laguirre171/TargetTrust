@@ -4,10 +4,14 @@ public class TesteWhile {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		while (true) {
-			System.out.println("Teste while");
-			
+
+		Integer valor = 1;
+
+		while (valor <= 10) {
+
+			System.out.println("Teste while " + valor);
+			valor++;
+
 		}
 
 	}
