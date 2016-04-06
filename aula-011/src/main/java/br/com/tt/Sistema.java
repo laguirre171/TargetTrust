@@ -10,6 +10,8 @@ public class Sistema {
 		System.out.println(animal.getApelido());
 		System.out.println(animal2.getApelido() + " " + animal2.getDono());
 		
+		System.out.println("-----------------------------------------------------\n\n\n");
+		new Gato("Lua", "Marcia",2).escrever();
 
 	}
 
