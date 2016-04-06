@@ -18,7 +18,7 @@ public class Programa {
 		System.out.println(cachorros.getFamilia());
 		System.out.println(passaros.getFamilia());
 		
-		System.out.println(Especie.getQtd(); //é estático
+		System.out.println(Especie.getQtd()); //é estático
 
 
 	}

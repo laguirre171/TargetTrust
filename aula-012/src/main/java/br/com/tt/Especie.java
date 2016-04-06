@@ -7,7 +7,7 @@ public class Especie {
 	private static int qtd;
 	
 	public Especie(){ //construtor
-		qtd++; //soma a quantidade de animais
+		qtd++; //soma a quantidade de animais de forma stática
 	}
 	
 	//alt+shift + s depois r cria os get and setters
