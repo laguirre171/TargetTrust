@@ -4,13 +4,12 @@ public class Programa {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String turno = "M";
+		String turno = "T";
 
 		switch (turno) {
 		case "M":
 			System.out.println("Bom dia");
-
-			break;
+			break; // Faz não cair na opção defaut e em outras opções quando não satisfeitas 
 		case "T":
 			System.out.println("Boa tarde");
 			break;
@@ -18,7 +17,7 @@ public class Programa {
 			System.out.println("Boa Noite");
 			break;
 
-		default:
+		default: // caso não encontre outra opção
 			System.out.println("Olá");
 			break;
 		}
