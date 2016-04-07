@@ -13,4 +13,8 @@ public enum DiaSemana {
 		return "Total: " + horas;
 	}
 
+	public int getHoras() {
+		return horas;
+	}
+
 }

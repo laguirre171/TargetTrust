@@ -12,7 +12,7 @@ public class Programa {
 		
 		System.out.println("---------------------------------");
 		for (DiaSemana diasemana : DiaSemana.values()) {
-			System.out.println(diasemana);
+			System.out.println(diasemana + " -- " + diasemana.getHoras());
 		}
 
 	}
