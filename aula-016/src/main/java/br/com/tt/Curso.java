@@ -3,8 +3,11 @@ package br.com.tt;
 public class Curso {
 	private DiaSemana diaSemana; //Enum vira tipo de dados
 	private String curso;
-	
-	
+			
+	public Curso() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 	@Override

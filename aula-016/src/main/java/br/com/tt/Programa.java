@@ -9,6 +9,11 @@ public class Programa {
 		
 		System.out.println(curso01);
 		System.out.println(curso01.getDiaSemana().mostra());
+		
+		System.out.println("---------------------------------");
+		for (DiaSemana diasemana : DiaSemana.values()) {
+			System.out.println(diasemana);
+		}
 
 	}
 
