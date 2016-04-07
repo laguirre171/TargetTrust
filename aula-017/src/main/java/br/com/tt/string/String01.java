@@ -48,7 +48,7 @@ public class String01 {
 		//System.out.println("\"aaaa".equals(\"Aaaa\") = "+ "aaaa".equals("Aaaa"));
 		
 		String t = "a" + "b" + "c"; //cria 6 objetos
-		StringBuffer r = new StringBuffer();
+		StringBuffer r = new StringBuffer(); //Entra como uma thread
 		r.append("a");
 		r.append("b");
 		r.append("c");
@@ -59,6 +59,19 @@ public class String01 {
 		r.insert(1, "DDD");
 		System.out.println(r);
 		
+		StringBuilder b = new StringBuilder().append("a").append("b").append("c"); //não entra como thread é melhor
+		System.out.println("StringBuilder = " + b);
+		
+		StringBuilder inverter = new StringBuilder();
+		for (int i = b.length(); i >=0 ; i--) {
+			inverter.append(b.charAt(i));
+		}
+		System.out.println(inverter);
+		System.out.println(inverter.reverse());
+		
+		System.out.println(inverter.hashCode());
+		
+				
 	}
 
 
