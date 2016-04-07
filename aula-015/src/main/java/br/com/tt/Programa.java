@@ -5,7 +5,7 @@ public class Programa {
 	public static void main(String[] args) {
 		
 		final int i = 0;
-		i = 1; //depois que recebe um valor não muda mais 
+		//i = 1; //depois que recebe um valor não muda mais - não recebe outro valor 
 		
 		
 
