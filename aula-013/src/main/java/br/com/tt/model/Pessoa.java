@@ -4,11 +4,8 @@ import java.util.Calendar;
 
 public class Pessoa {
 	private String nome;
-	private String CPF;
-	private Calendar dataNasc;
-	
-		
-		
+	protected String CPF; //apenas usados por filhos e no mesmo pacote
+	private Calendar dataNasc;	
 
 	
 	public Pessoa() {

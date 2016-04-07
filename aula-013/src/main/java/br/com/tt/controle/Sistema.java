@@ -26,7 +26,11 @@ public class Sistema {
 		fornecedor.setCPF("21987654321");
 		fornecedor.setMaterial("TI");
 		fornecedor.setAtivo(Boolean.TRUE);
-
+		
+		System.out.println(cliente);
+		System.out.println(fornecedor);
+		
+		//reflection é a capacidade de olhar sobre o próprio objeto e iteragir sobre ele
 	}
 
 }

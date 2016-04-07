@@ -7,13 +7,20 @@ public class Cliente extends Pessoa {
 	private BigDecimal saldoDivida;
 	
 		
-	
+	/*
 	
 	public Cliente(Boolean ativo, BigDecimal saldoDivida) {
 		super();
 		this.ativo = ativo;
 		this.saldoDivida = saldoDivida;
+	}*/
+	
+	public void geraId(){
+		System.out.println(this.getClass().getSimpleName() + Math.random());
 	}
+	
+	
+	
 	public Boolean getAtivo() {
 		return ativo;
 	}
@@ -27,6 +34,9 @@ public class Cliente extends Pessoa {
 		this.saldoDivida = saldoDivida;
 	}
 	
-	
+	@Override
+	public String toString(){
+		return this.getNome() + " " + CPF ; //CPF é protected por isso pode ser utilizado sem o get
+	}
 
 }

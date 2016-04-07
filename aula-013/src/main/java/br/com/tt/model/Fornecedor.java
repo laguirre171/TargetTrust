@@ -14,6 +14,13 @@ public class Fornecedor extends Pessoa {
 		this.material = material;
 	}
 	
+	@Override
+	public String toString() { //chamado quando mando printar o objeto
+		return "Fornecedor [ativo=" + ativo + ", material=" + material + ", getNome()=" + getNome() + ", getCPF()="
+				+ getCPF() + ", getDataNasc()=" + getDataNasc() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
+	}
+
 	public Fornecedor() {
 		super();
 		// TODO Auto-generated constructor stub
