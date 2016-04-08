@@ -3,11 +3,13 @@ package br.com.tt;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.text.html.HTMLDocument.Iterator;
+
 public class ArrayList03 {
 
 	public static void main(String[] args) {
-		List<String> lista = new ArrayList<>();
-		
+		List <String> lista = new ArrayList<>();
+	
 		lista.add("Pedro");
 		lista.add("Maria");
 		lista.add("Bruno");
@@ -23,7 +25,12 @@ public class ArrayList03 {
 		
 		lista.clear();
 		System.out.println(lista.isEmpty());
-
-	}
+		
+		ArrayList<String> a = new ArrayList<>();
+					
+		}
+		
 
 }
+
+
