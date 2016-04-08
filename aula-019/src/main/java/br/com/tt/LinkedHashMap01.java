@@ -7,6 +7,10 @@ import java.util.TreeMap;
 
 public class LinkedHashMap01 {
 
+	//mantem a ordenação como inserido
+	//é organizada
+	// toda ver que encontrar linked é organizada
+	
 	public static void main(String[] args) {
 		Map<Integer, String> nomes = new LinkedHashMap<>();
 
