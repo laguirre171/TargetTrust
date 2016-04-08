@@ -7,7 +7,7 @@ public class Programa {
 		// String a = alunos[10]; //Erro: ArrayIndexOutofBoundsException
 		alunos[0] = "Pedro";
 		alunos[1] = "Maria";
-		int i = 0;
+		int i = 0;    
 		
 		for (String aluno : alunos) {
 			System.out.println(i++ + "º - " + (aluno ==null ? "" : aluno)); //se diferente de null mostra o nome
