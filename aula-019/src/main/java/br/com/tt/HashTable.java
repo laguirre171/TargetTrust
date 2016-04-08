@@ -2,7 +2,6 @@ package br.com.tt;
 
 import java.util.Hashtable;
 import java.util.Map;
-import java.util.Set;
 
 public class HashTable {
 
