@@ -44,5 +44,16 @@ public class Programa01 {
 			throw new MinhaException("Digitar nome com no minimo 3 letras");
 		}
 	}
+	
+	public static void exceptionFinally(){
+		try{
+			String nome = "maria";
+				
+			}catch (Exception e){
+				
+		}finally{
+			System.out.println("Sempre executa");
+		}
+	}
 
 }
