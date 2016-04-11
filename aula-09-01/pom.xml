@@ -3,4 +3,12 @@
   <groupId>br.com.tt</groupId>
   <artifactId>aula-09-01</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+<dependencies>
+<dependency>
+	<groupId>org.postgresql</groupId>
+	<artifactId>postgresql</artifactId>
+	<version>9.4.1208.jre7</version>
+</dependency>
+</dependencies>
+
 </project>
