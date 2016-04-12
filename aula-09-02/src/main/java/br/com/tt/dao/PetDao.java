@@ -15,7 +15,7 @@ public class PetDao implements Dao<Pet> {
 			+ "VALUES(?,?,?,?)";
 	private static final String SQL_QUERY_SELECT = "SELECT * FROM PET"
 			+ "VALUES(?,?,?,?)";
-	rivate static final String SQL_QUERY_SELECT_NOME = "SELECT * FROM  PET WHERE NOME LIKE ?";
+	private static final String SQL_QUERY_SELECT_NOME = "SELECT * FROM  PET WHERE NOME LIKE ?";
 
 	public void salvar(Pet entity) {
 		// TODO Auto-generated method stub
