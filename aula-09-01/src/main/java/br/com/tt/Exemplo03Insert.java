@@ -22,7 +22,7 @@ public class Exemplo03Insert {
 		try {
 			conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
-			conn.setAutoCommit(false);
+			conn.setAutoCommit(false); //precisa dar um commit 
 			String sql = "INSERT INTO PET(ID,NOME,COR,RACA)"
 					+ "VALUES(?,?,?,?)"; // não passar valores aqui, pois pode
 											// receber sqlinject
