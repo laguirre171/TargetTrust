@@ -7,11 +7,10 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class Exemplo06ConnectionProperties {
-	static final String DB_URL = "jdbc:postgresql://localhost:5432/postgres"; //por ser static final é uma constatnte
-	
+		
 	public static void main(String[] args) throws IOException, SQLException {
 		Properties prop = new Properties();
-		String fileName = "config.properties";
+		String fileName = "db.properties";
 		Class<Exemplo03ResourceProperties> clazz = Exemplo03ResourceProperties.class;
 		InputStream input = clazz.getClassLoader().getResourceAsStream(fileName);
 		
@@ -21,8 +20,12 @@ public class Exemplo06ConnectionProperties {
 		}
 		
 		prop.load(input);
+		String host = prop.getProperty("host");
+		String porta = prop.getProperty("porta");
+		String banco = prop.getProperty("banco");
+		String url = "jdbc:postgresql://" + host + ":" + porta + "/" + banco; 
 		
-		DriverManager.getConnection(DB_URL,prop);
+		DriverManager.getConnection(url,prop);
 		System.out.println("Conexão Realizada com Sucesso!");
 	}
 
