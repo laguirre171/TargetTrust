@@ -31,9 +31,9 @@ public class Programa {
 	}
 	
 	//iterator cria um objeto que verifica a existência de um próximo elemento. um tipo de for each
-	public static <T extends Collection<String>> void teste(T t){  //esse método recebe qq coisa. É generics
+	public static <T extends Collection<String>, E> void teste(T t){  //esse método recebe qq coisa. É generics
 		System.out.println(t);
-		Iterator<E> iterator = t.iterator();
+		Iterator<E> iterator = (Iterator<E>) t.iterator();
 		while (iterator.hasNext()){
 			System.out.println((Object) iterator.next());
 			
