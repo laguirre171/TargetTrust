@@ -33,7 +33,10 @@ public class StringFormat {
 		String dataHora = sdtDataHoraBr.format(new Date());
 		System.out.println(dataHora);
 		Date data10 = sdtDataHoraBr.parse("10/04/2016 09:33:45");
-		System.out.println(data10);				
+		System.out.println(data10);
+		
+		//String moeda = local.getDisplayName();
+		//System.out.println(moeda);
 		
 		
 	}
