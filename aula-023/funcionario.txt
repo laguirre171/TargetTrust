@@ -1,0 +1,1 @@
+{"nome":"Bruno","cpf":"545454","salario":7000.0,"funcao":"Desenvolvedor JAVA"}

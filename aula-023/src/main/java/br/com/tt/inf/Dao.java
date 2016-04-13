@@ -1,20 +1,16 @@
 package br.com.tt.inf;
 
 import java.util.List;
-//A interface não deve mudar bubca - ela pre define métodos
+
 public interface Dao<T> {
-	
-	//void salvar(); //por default todos os métodos são public abstract
-	//T buscar();
-	
+
 	public abstract void salvar();
+
+	// Todos os metodos são: public abstract
+	// não é necessario digitar
+
 	<I> T buscar(I id);
-	
-	List<T>consultar();
-	
-		
-	
-	
-	
+
+	<E> List<T> consultar(E e);
 
 }

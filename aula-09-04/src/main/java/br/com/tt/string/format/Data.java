@@ -14,7 +14,9 @@ public class Data {
 		System.out.println("Dia " + data.get(Calendar.YEAR));
 		
 		data.add(Calendar.MONTH, amount);
-		
+		//dataTime = dateTime.plusDays(5);
+		//dataTime = dateTime.plusMonths(5);
+		//dataTime = dateTime.plusDays(5);
 	}
 
 }

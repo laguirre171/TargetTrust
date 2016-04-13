@@ -11,17 +11,14 @@ public class Exemplo03ResourceProperties {
 		String fileName = "config.properties";
 		Class<Exemplo03ResourceProperties> clazz = Exemplo03ResourceProperties.class;
 		InputStream input = clazz.getClassLoader().getResourceAsStream(fileName);
-		
-		if(input == null){
-			System.err.println("Não foi possível localizar " + fileName);
+		if (input == null) {
+			System.err.println("Não foi possivel localizar " + fileName);
 			return;
 		}
-		
 		prop.load(input);
 		System.out.println(prop.getProperty("dataBase"));
 		System.out.println(prop.getProperty("user"));
 		System.out.println(prop.getProperty("password"));
-
 	}
 
 }
