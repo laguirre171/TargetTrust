@@ -41,7 +41,8 @@ public class PetDao implements Dao<Pet> {
 				pstmt = conn.prepareStatement(SQL_QUERY_SELECT);
 			}else{
 				pstmt = conn.prepareStatement(SQL_QUERY_SELECT_NOME);
-				pstmt.setString(1, "%"+entity.getNome()+"%");
+				//pstmt.setString(1, "%"+entity.getNome()+"%");
+				//pstmt.setString(1, String.format(1,"%%%s%%, entity.getNome()); 
 			}
 			ResultSet rs = pstmt.executeQuery();
 
