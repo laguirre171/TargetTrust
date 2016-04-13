@@ -1,10 +1,11 @@
 package br.com.tt;
 
-import java.awt.List;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public class Programa {
