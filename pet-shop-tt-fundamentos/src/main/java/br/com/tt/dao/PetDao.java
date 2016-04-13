@@ -14,7 +14,7 @@ public class PetDao implements Dao<Pet> {
 	private static final String SQL_INSERT = "INSERT INTO PET (ID, NOME, COR, RACA) VALUES (?, ?, ?, ?)";
 	private static final String SQL_QUERY_SELECT = "SELECT * FROM  PET";
 	private static final String SQL_QUERY_SELECT_NOME = "SELECT * FROM  PET WHERE NOME LIKE ?";
-
+	private static final String ID = "ID";
 	public void salvar(Pet entity) {
 
 		try (Connection conn = new ConnectionFactory().getConnection()) {
@@ -48,7 +48,7 @@ public class PetDao implements Dao<Pet> {
 
 			while (rs.next()) {
 				Pet pet = new Pet();
-				pet.setId(rs.getInt("ID"));
+				pet.setId(rs.getInt(ID));
 				pet.setNome(rs.getString("NOME"));
 				pet.setCor(rs.getString("COR"));
 				pet.setRaca(rs.getString("RACA"));
@@ -59,5 +59,21 @@ public class PetDao implements Dao<Pet> {
 		}
 		return pets;
 	}
+	
+	public List<Pet> consultar(){
+		return consultar(null);
+	}
 
+	public Integer proximoId() throws Exception {
+		try (Connection conn = new ConnectionFactory().getConnection()) {
+			PreparedStatement pstmt = null;
+			pstmt = conn.prepareStatement(SQL_QUERY_SELECT);
+			ResultSet rs = pstmt.executeQuery();	
+			rs.next();
+			return rs.getInt(ID) +1;
+			} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		}
+	}
 }
