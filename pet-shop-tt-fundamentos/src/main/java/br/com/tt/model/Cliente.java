@@ -143,7 +143,11 @@ public class Cliente implements Comparable<Cliente>, Comparator<Cliente> { //ctr
 
 	@Override
 	public int compareTo(Cliente c) {
+		//compara por id
 		return (int) (this.id - c.getId());
+		//Compara por nome
+		//return c1.getNome().compareTo(c2.getNome());
+
 	}
 
 }
