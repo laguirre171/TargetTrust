@@ -6,15 +6,13 @@ import java.util.Properties;
 
 public class UtilProperties {
 	public static Properties getProperties(String fileName) throws IOException {
-		Properties prop = UtilProperties.getProperties("db.properties");
-		InputStream input = UtilProperties.class.getClassLoader() //static não usa this, vai o nome da classe
+		Properties prop = new Properties();
+		InputStream input = UtilProperties.class.getClassLoader()
 				.getResourceAsStream(fileName);
-
 		if (input == null) {
-			System.err.println("Não foi possível localizar " + fileName);
+			System.err.println("Não foi possivel localizar " + fileName);
 			return null;
 		}
-
 		prop.load(input);
 		return prop;
 	}
